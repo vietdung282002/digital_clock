@@ -20,7 +20,21 @@
 }
 
 body {
-  background: var(--background);
+  background-color: rgb(1, 6, 109);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+  color: #fff;
+}
+
+.clock-container {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  margin-top: 70px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: rgb(24, 70, 210);
 }
