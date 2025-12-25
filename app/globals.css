@@ -25,10 +25,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.title {
-  color: #fff;
-}
-
 .clock-container {
   border: 1px solid #fff;
   border-radius: 10px;
@@ -37,4 +33,34 @@ body {
   font-size: 2rem;
   font-weight: bold;
   background-color: rgb(24, 70, 210);
+  opacity: 0;
+  transform: scale(0);
+  animation: scaleIn 1s ease-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.title {
+  color: #fff;
+  animation: slideUp 1s ease-out;
 }

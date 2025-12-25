@@ -12,8 +12,10 @@ export default function Home() {
 
 function MainContainer() {
   return (
-    <div className="flex flex-col main-container px-[64px] w-1/2">
-      <h1 className="text-4xl font-bold self-start title">It's time!</h1>
+    <div className="flex flex-col main-container px-[64px] w-2xl">
+      <div className="overflow-hidden">
+        <div className="text-4xl font-bold self-start title">It's time!</div>
+      </div>
       <ClockContainer />
     </div>
   );
